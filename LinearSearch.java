@@ -11,7 +11,10 @@ public class LinearSearch {
 		return -1;
 		
 	}
-		
+	
+	/* returns true if target is found
+	 *  returns false if not found
+	 */
 	public static boolean contains(int[] arr,int target) {
 		for(int i=0;i<arr.length;i++)
 			if(arr[i]==target)
@@ -20,6 +23,10 @@ public class LinearSearch {
 		return false;
 		
 	}
+	/* Search for a char in a string
+	 * returns the index of target
+	 *  returns -1 if not found
+	 */
 	
 	public static int find(String str,char target) {
 		for(int i=0;i<str.length();i++)
@@ -27,6 +34,9 @@ public class LinearSearch {
 				return i;
 		return -1;
 	}
+	/* returns true if target is found
+	 *  returns false if not found
+	 */
 	
 	public static boolean contains(String str,char target) {
 		for(int i=0;i<str.length();i++)
@@ -34,7 +44,10 @@ public class LinearSearch {
 				return true;
 		return false;
 	}
-	
+	/* Search 2d array
+	 * returns the index of target in an int array [row,col]
+	 *  returns [-1,-1] if not found
+	 */
 	
 	public static int[] find(int[][] arr, int target) {
 		for(int row=0;row<arr.length;row++) {
